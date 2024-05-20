@@ -319,6 +319,10 @@
     flex-direction: column;
   }
 
+  .main-content .footer .box-row .box{
+    width: 80%;
+  }
+
   .main-content .footer p {
     text-align: center;
   }
