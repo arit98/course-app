@@ -1,0 +1,141 @@
+.cert {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cert p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #686972;
+  margin-bottom: 20px;
+}
+
+.cert p span {
+  color: #992e9d;
+}
+
+.cert .box-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cert .box-group .box,
+.cert .box-group .box1 {
+  width: 100%; /* Take full width on mobile */
+}
+
+.cert .box-group .box,
+.cert .box-group .box1 {
+  background-color: #fcf5fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+
+.cert .box-group .box p,
+.cert .box-group .box1 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #450D45;
+}
+
+.cert .box-group .box .group-btn,
+.cert .box-group .box1 .group-btn {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cert .box-group .box .group-btn .violet-btn,
+.cert .box-group .box1 .group-btn .violet-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #f9ebfc;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: #992e9d;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cert .box-group .box .group-btn .violet-btn h5,
+.cert .box-group .box1 .group-btn .violet-btn h5 {
+  color: #992e9d;
+  margin: 0;
+}
+
+.cert .box-group .box h4,
+.cert .box-group .box1 h4 {
+  font-weight: 400;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  /* For tablets */
+  .cert {
+    width: 70%;
+  }
+
+  .cert p {
+    font-size: 28px;
+  }
+
+  .cert .box-group {
+    flex-direction: row;
+  }
+
+  .cert .box-group .box,
+  .cert .box-group .box1 {
+    width: 48%;
+  }
+
+  .cert .box-group .box .group-btn,
+  .cert .box-group .box1 .group-btn {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* For desktops */
+  .cert {
+    width: 60%;
+  }
+
+  .cert p {
+    font-size: 32px;
+  }
+
+  .cert .box-group .box .box-img-mob{
+    display: none;
+  }
+
+  .cert .box-group .box1 .box-img-mob{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cert .box-group .box .box-img1{
+    display: none;
+  }
+
+  .cert .box-group .box1 .box-img1{
+    display: none;
+  }
+
+  .cert .box-group .box .group-btn .violet-btn,
+.cert .box-group .box1 .group-btn .violet-btn {
+  width: 100%;
+}
+}

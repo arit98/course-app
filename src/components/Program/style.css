@@ -1,0 +1,43 @@
+.prog {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 200px;
+}
+
+.prog p {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #b872d0, #372faa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prog .btn {
+  margin-top: 30px;
+  background: linear-gradient(to bottom, #800080, #7e267e);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .prog p {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .prog img{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prog .img-mob{
+    display: none;
+  }
+}
