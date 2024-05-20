@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TimeWait from "../../assets/time-wait.svg";
 import ScribbleFinal from "../../assets/scribble-final.svg";
 import Step from "../../assets/step.svg";
+import Step1 from "../../assets/step-v.svg";
 import Img1 from "../../assets/step1-img.svg";
 import Img2 from "../../assets/complete.svg";
 import Img3 from "../../assets/receive.svg";
@@ -53,10 +54,14 @@ const Main = () => {
               <img height={30} src={Step} alt="" />
               <p>Step 1</p>
             </div>
+            <div className="row-arrow-mob">
+              <img height={30} src={Step1} alt="" />
+              <p>1</p>
+            </div>
             <div className="row-box">
               <p>Step 1: Enroll into your favorite course</p>
               <div className="img-box">
-                <img height={80} src={Img1} alt="" />
+                <img height={95} src={Img1} alt="" />
               </div>
               <div className="img-box-mob">
                 <img height={54} src={Img1} alt="" />
@@ -68,6 +73,10 @@ const Main = () => {
             <div className="row-arrow">
               <img height={30} src={Step} alt="" />
               <p>Step 2</p>
+            </div>
+            <div className="row-arrow-mob">
+              <img height={30} src={Step1} alt="" />
+              <p>2</p>
             </div>
             <div className="row-box">
               <p>Step 2: Complete Course & Assignments within 2 Years!</p>
@@ -84,6 +93,10 @@ const Main = () => {
             <div className="row-arrow">
               <img height={30} src={Step} alt="" />
               <p>Step 3</p>
+            </div>
+            <div className="row-arrow-mob">
+              <img height={30} src={Step1} alt="" />
+              <p>3</p>
             </div>
             <div className="row-box">
               <p>Step 3: Receive 100% Refund upon completion</p>
