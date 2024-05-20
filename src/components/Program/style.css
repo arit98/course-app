@@ -22,6 +22,7 @@
   color: #fff;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -31,7 +32,7 @@
     text-align: center;
   }
 
-  .prog img{
+  .prog .img{
     display: none;
   }
 }

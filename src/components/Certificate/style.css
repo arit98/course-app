@@ -109,7 +109,7 @@
 @media screen and (min-width: 1024px) {
   /* For desktops */
   .cert {
-    width: 60%;
+    width: 80%;
   }
 
   .cert p {

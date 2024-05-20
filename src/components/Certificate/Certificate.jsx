@@ -20,7 +20,7 @@ const Certificate = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                marginTop: "-130px",
+                marginTop: "0px",
                 marginBottom: "-80px",
               }}
               alt=""
