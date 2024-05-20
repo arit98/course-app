@@ -56,7 +56,7 @@ const Main = () => {
             <div className="row-box">
               <p>Step 1: Enroll into your favorite course</p>
               <div className="img-box">
-                <img height={74} src={Img1} alt="" />
+                <img height={80} src={Img1} alt="" />
               </div>
               <div className="img-box-mob">
                 <img height={54} src={Img1} alt="" />

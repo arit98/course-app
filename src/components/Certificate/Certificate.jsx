@@ -16,11 +16,10 @@ const Certificate = () => {
           <p>Get 6 Industry Recognized Certificates</p>
           <div className="box-img1">
             <img
+              height={445}
               src={CertificateImg}
               style={{
-                width: "100%",
-                height: "100%",
-                marginTop: "0px",
+                marginTop: "-80px",
                 marginBottom: "-80px",
               }}
               alt=""
@@ -58,10 +57,10 @@ const Certificate = () => {
             you crack your first internship.
           </h4>
           <div className="box-img-mob">
-          <img height={250} src={Charecter} alt="" />
+            <img height={200} src={Charecter} alt="" />
           </div>
           <div className="box-img1">
-          <img height={300} src={Charecter} alt="" />
+            <img height={300} src={Charecter} alt="" />
           </div>
           <div></div>
         </div>

@@ -45,7 +45,7 @@
 .cert .box-group .box1 p {
   font-size: 20px;
   font-weight: 600;
-  color: #450D45;
+  color: #450d45;
 }
 
 .cert .box-group .box .group-btn,
@@ -116,26 +116,30 @@
     font-size: 32px;
   }
 
-  .cert .box-group .box .box-img-mob{
+  .cert .box-group .box .box-img-mob {
     display: none;
   }
 
-  .cert .box-group .box1 .box-img-mob{
+  .cert .box-group .box1 .box-img-mob {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .cert .box-group .box .box-img1{
+  .cert .box-group .box .box-img1 {
     display: none;
   }
 
-  .cert .box-group .box1 .box-img1{
+  .cert .box-group .box1 .box-img1 {
     display: none;
   }
 
   .cert .box-group .box .group-btn .violet-btn,
-.cert .box-group .box1 .group-btn .violet-btn {
-  width: 100%;
-}
+  .cert .box-group .box1 .group-btn .violet-btn {
+    width: 100%;
+  }
+
+  .cert .box-group .box1 h4{
+    margin-bottom: 15px;
+  }
 }
