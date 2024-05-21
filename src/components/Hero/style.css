@@ -189,7 +189,7 @@
   .hero-container .text-btn .group-btn .more-btn {
     padding: 0.8rem;
   }
-  container .wrapper .footer {
+  .container .wrapper .footer {
     display: none;
   }
 }
@@ -221,5 +221,9 @@
   .hero-container .text-btn .group-btn .more-btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .footer{
+    display: none;
   }
 }
