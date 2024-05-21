@@ -1,9 +1,9 @@
-.wrapper{
+.wrapper {
     width: 100%;
     user-select: none;
 }
 
-.hero-container{
+.hero-container {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -11,7 +11,7 @@
     margin: auto;
 }
 
-.hero-border{
+.hero-border {
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -21,44 +21,44 @@
     width: 16rem;
 }
 
-.herotext{
+.herotext {
     width: 70%;
     margin-top: 30px;
 }
 
-.herotext p{
+.herotext p {
     font-size: 64px;
     font-weight: 600;
     color: #595961;
 }
 
-.herotext span{
+.herotext span {
     color: #AA36AF;
 }
 
-.hero-container .text-btn{
+.hero-container .text-btn {
     margin-top: 10px;
 }
 
-.hero-container .text-btn .group-btn{
+.hero-container .text-btn .group-btn {
     display: flex;
     height: 30px;
     gap: 1rem;
     margin-top: 30px;
 }
 
-.hero-container .text-btn .group-btn .gold-btn{
+.hero-container .text-btn .group-btn .gold-btn {
     display: flex;
     align-items: center;
     gap: 0.2rem;
     background-color: #FEFBE9;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     border-radius: 50px;
     color: #BB5302;
     font-weight: 500;
 }
 
-.hero-container .text-btn .group-btn .enroll-btn{
+.hero-container .text-btn .group-btn .enroll-btn {
     display: flex;
     align-items: center;
     gap: 0.3rem;
@@ -69,7 +69,7 @@
     cursor: pointer;
 }
 
-.hero-container .text-btn .group-btn .more-btn{
+.hero-container .text-btn .group-btn .more-btn {
     display: flex;
     align-items: center;
     padding: 1.5rem;
@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-.wrapper .footer{
+.wrapper .footer {
     margin-top: 70px;
     width: 100%;
     height: 140px;
@@ -89,7 +89,7 @@
     justify-content: space-between;
 }
 
-.wrapper .footer .img{
+.wrapper .footer .img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,113 +103,117 @@
     height: 80px;
 }
 
-.wrapper .footer .img .icon{
+.wrapper .footer .img .icon {
     font-size: 19px;
     color: #AA36AF;
 }
 
-.wrapper .footer .img .img-text{
+.wrapper .footer .img .img-text {
     display: flex;
     flex-direction: column;
     color: #686972;
 }
 
-.img-text :first-child{
+.img-text :first-child {
     font-size: 2rem;
     font-weight: 600;
     color: #AA36AF;
 }
 
-.img-text :last-child{
+.img-text :last-child {
     font-size: 1.3rem;
 }
 
-@media (max-width: 768px) {
-    .wrapper{
-        width: 100%;
-        user-select: none;
+/* Large screens */
+@media (max-width: 1200px) {
+    .herotext p {
+        font-size: 48px;
     }
-    
-    .hero-container{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        padding-top: 7rem;
-        margin: auto;
-    }
-    
-    .hero-border{
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        border-radius: 15px;
-        border: 1px solid orange;
-        padding: 0.5rem;
-        width: 16rem;
-    }
-    
-    .herotext{
-        width: 100%;
-        margin-top: 30px;
-    }
-    
-    .herotext p{
-        font-size: 32px;
-        font-weight: 600;
-        color: #595961;
-    }
-    
-    .herotext span{
-        color: #AA36AF;
-    }
-    
-    .hero-container .text-btn{
-        margin-top: 10px;
-    }
-    
-    .hero-container .text-btn .group-btn{
-        display: flex;
-        flex-wrap: wrap;
-        height: 150px;
-        gap: 1rem;
-        margin-top: 30px;
-    }
-    
-    .hero-container .text-btn .group-btn .gold-btn{
-        display: flex;
-        align-items: center;
-        gap: 0.2rem;
-        background-color: #FEFBE9;
-        padding: 0 15px 0 15px;
-        border-radius: 50px;
-        color: #BB5302;
-        font-weight: 500;
-        font-size: 15px;
-    }
-    
-    .hero-container .text-btn .group-btn .enroll-btn{
-        display: flex;
-        align-items: center;
-        gap: 0.3rem;
-        background-color: #AA36AF;
-        padding: 1.5rem;
-        border-radius: 15px;
-        color: #fff;
-        cursor: pointer;
-    }
-    
-    .hero-container .text-btn .group-btn .more-btn{
-        display: flex;
-        align-items: center;
-        padding: 1.5rem;
-        color: #AA36AF;
-        font-weight: 700;
-        gap: 0.2rem;
-        cursor: pointer;
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .hero-container {
+        width: 90%;
     }
 
-    .wrapper .footer{
+    .herotext {
+        width: 100%;
+    }
+
+    .herotext p {
+        font-size: 40px;
+    }
+
+    .hero-container .text-btn .group-btn {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .hero-container .text-btn .group-btn .gold-btn {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .hero-container .text-btn .group-btn .enroll-btn,
+    .hero-container .text-btn .group-btn .more-btn {
+        padding: 1rem;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .hero-container {
+        width: 95%;
+    }
+
+    .herotext p {
+        font-size: 32px;
+    }
+
+    .hero-container .text-btn .group-btn {
+        height: auto;
+    }
+
+    .hero-container .text-btn .group-btn .gold-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .hero-container .text-btn .group-btn .enroll-btn,
+    .hero-container .text-btn .group-btn .more-btn {
+        padding: 0.8rem;
+    }
+
+    .wrapper .footer {
         display: none;
     }
-    
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .hero-container {
+        width: 80%;
+        padding-top: 4rem;
+    }
+
+    .herotext p {
+        font-size: 24px;
+    }
+
+    .hero-border {
+        width: 100%;
+    }
+
+    .hero-container .text-btn .group-btn {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-container .text-btn .group-btn .gold-btn,
+    .hero-container .text-btn .group-btn .enroll-btn,
+    .hero-container .text-btn .group-btn .more-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
