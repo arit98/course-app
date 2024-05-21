@@ -324,6 +324,13 @@
     flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  -ms-overflow-style: none; 
+  }
+
+  .main-content .footer .box-row::-webkit-scrollbar {
+    display: none;
   }
 
   .main-content .footer .box-row .box{
