@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import TimeWait from "../../assets/time-wait.svg";
 import ScribbleFinal from "../../assets/scribble-final.svg";
 import Step from "../../assets/step.svg";
@@ -7,29 +7,39 @@ import Img1 from "../../assets/step1-img.svg";
 import Img2 from "../../assets/complete.svg";
 import Img3 from "../../assets/receive.svg";
 import "./style.css";
+import { AuthContext } from "../../context/AuthContext";
 
 const Main = () => {
   const totalSeats = 20;
   const [seatsLeft, setSeatsLeft] = useState(totalSeats);
+  const {isLoggedIn} = useContext(AuthContext)
 
   const handleRangeChange = (event) => {
     const selectedSeats = totalSeats - event.target.value;
     setSeatsLeft(selectedSeats);
   };
 
+  const logoUrls = [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Deloitte.svg/1200px-Deloitte.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Capgemini_201x_logo.svg/2560px-Capgemini_201x_logo.svg.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOev-NyWHSnM89sc6SV5AqCEvLp3OYaMuBw&s",
+    "https://netclan.com/assets/images/logo1.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/2560px-Tata_Consultancy_Services_Logo.svg.png"
+  ];
+
   return (
     <section className="main-content">
       <div className="offer">
-        <div className="heading">
+         <div className="heading">
           <p>
-            Don't miss out on this <span>limited-time opportunity</span> to
-            learn for <span>Free!</span>
+            Don't miss out on this <span className="bg-gradient-to-r from-[#b73bbe] to-[#992e9d] text-transparent bg-clip-text">limited-time opportunity</span> to
+            learn for <span className="bg-gradient-to-r from-[#b73bbe] to-[#992e9d] text-transparent bg-clip-text">Free!</span>
           </p>
         </div>
         <div className="box">
-          <p>100% Refund Offer 😎</p>
+          <p className="text-xl text-white m-0">100% Refund Offer 😎</p>
           <div className="group">
-            <p>{seatsLeft} Seats Left</p>
+            <p className="m-[5px 0] text-[14px] text-white">{seatsLeft} Seats Left</p>
             <input
               type="range"
               min="0"
@@ -40,15 +50,29 @@ const Main = () => {
           </div>
           <div className="text-box">
             <img height={20} src={TimeWait} alt="" />
-            <p>Offer ends in 10:00 Mins</p>
+            <p className="text-white text-[16px]">Offer ends in 10:00 Mins</p>
           </div>
           <div className="scribble">
             <img src={ScribbleFinal} alt="" />
           </div>
         </div>
 
-        <h2>How does it work?</h2>
-        <div className="row">
+        {isLoggedIn && <div className="md:w-[25rem] w-[80%] h-full py-10 flex items-center justify-center">
+        <input
+            required
+              placeholder="Enter your coupon code"
+              title="Input title"
+              name="input-name"
+              type="text"
+              id="password_field"
+              className="w-full h-10 pl-4 rounded-l-xl border border-[#e5e5e5] shadow-sm transition-all duration-300 outline-none bg-transparent"
+            />
+            <button className="px-4 py-2 rounded-r-xl bg-gradient-to-b from-[#b73bbe] to-[#992E9D] text-gray-100 hover:text-white shadow-md">Apply</button>
+        </div>}
+
+        <h2 className="mt-2">How does it work?</h2>
+        <div className="row"> 
+          {/* arrow */}
           <div className="row-item">
             <div className="row-arrow">
               <img height={30} src={Step} alt="" />
@@ -119,9 +143,9 @@ const Main = () => {
           Top Companies Hiring <span>Data Scientist</span>
         </p>
         <div className="box-row">
-          {[1, 2, 3, 4, 5].map((_) => (
-            <div className="box">
-              <p>Logo</p>
+          {logoUrls.map((url, index) => (
+            <div key={index} className="box">
+              <img className="p-8" src={url} alt={`Company Logo ${index + 1}`} />
             </div>
           ))}
         </div>
